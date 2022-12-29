@@ -1,0 +1,505 @@
+<div class="container">
+    <div class="cont">
+        <div class="png">
+            <img src="assets/imges/sky.jpeg" alt="img" />
+            <div class="btn">
+                <div class="f">
+                    <i></i><span>Flights</span>
+                </div>
+                <div class="h">
+                    <i></i><span>Hotel</span>
+                </div>
+                <div class="c">
+                    <i></i><span>car Hire</span>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="btn-1">
+
+        </div>
+        <div class="help">
+            <a href="#">Help</a>
+        </div>
+        <div class="lang">
+            <div class="box">
+                <button>English India $INR</button>
+            </div>
+        </div>
+        <div class="log">
+            <button>login</button>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+
+
+<div class="container-2  cnt">
+    <div class="bg-img">
+        <p>.</p>
+        <div>
+            <h2>Find your place to stay</h2>
+        </div>
+        <div class="sel">
+
+
+            <div class="date">
+
+                <div class="st">
+                    <p>where do you want to stay</p>
+                    <input type="text" style="width:600px">
+                </div>
+
+                <div class="c-in">
+                    <p>Check-in</p>
+                    <input type="text" style="width:100px;">
+                </div>
+
+                <div class="c-out">
+                    <p>Check-out</p>
+                    <input type="text" style="width:100px;">
+                </div>
+
+
+                <div class="room">
+                    <p>Guests and rooms</p>
+                    <input type="text" style="width:200px">
+                </div>
+            </div>
+
+
+
+            <div class="filtr">
+                <div class="f-can">
+                    <p>popular filter:</p>
+                    <input type="checkbox"><span>Free cancellation</span>
+                </div>
+
+                <div class="s4">
+                    <input type="checkbox"><span>4stars</span>
+                </div>
+
+                <div class="s3">
+                    <input type="checkbox"><span>3stars</span>
+                </div>
+
+
+
+            </div>
+
+
+
+        </div>
+    </div>
+</div>
+<section class="containers bg">
+    <div class="header">
+        <div>
+            <h2>Plan your next staycation</h2>
+        </div>
+        <div class="d-flex j-c-sb">
+            <div class="four-button">
+                <button class="button">Mumbai</button>
+                <button class="button">New Delhi</button>
+                <button class="button">Bengaluru</button>
+                <button class="button">Jaipur</button>
+                <button class="button">Hyderabad</button>
+
+            </div>
+            <div>
+                <a href="#" class="more-viev-link">View more hotels
+                </a>
+                <button class="more">></button>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="containers bg">
+    <div class="header b-botm">
+        <div class=" p-botm-30">
+            <h3 class="sub-heading t-center">Get the best prices from top hotel providers</h3>
+        </div>
+
+
+        <div class="d-flex f-d j-c-sb cu-po">
+            <div *ngFor="let i of rooms">
+                <img src="{{i.hotesrooms}}">
+            </div>
+        </div>
+
+    </div>
+</section>
+<section class="container bg pt-0-pb-0">
+    <div class="header">
+        <div class="f-d m-t-10px">
+            <div class="f-1">
+                <div class="card-type2 card-img">
+                    <div *ngFor="let i of contorl">
+                        <img src="{{i.hotestys}}">
+                    </div>
+
+                    <h4>See it all</h4>
+                    <p>From local hotels to global brands, discover millions of rooms all around the world.</p>
+                </div>
+            </div>
+            <div class="f-1">
+                <div class="card-type2">
+                    <div *ngFor="let i of mobile">
+                        <img src="{{i.mobileimages}}">
+                    </div>
+                    <h4>Compare right here</h4>
+                    <p>No need to search anywhere else. The biggest names in travel are right here.</p>
+                </div>
+            </div>
+            <div class="f-1">
+                <div class="card-type2">
+                    <div *ngFor="let i of outing">
+                        <img src="{{i.manandwoment}}">
+                    </div>
+                    <h4>Get exclusive rates</h4>
+                    <p>We’ve special deals with the world's leading hotels – and we share these savings with you.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="container p-300px">
+    <div class="header">
+        <h3 class="sub-heading">Need Inspiration?</h3>
+        <h2>View our hand-picked hotel destinations</h2>
+        <div class="grid-container card-container">
+            <div class="card">
+                <div class="card-img">
+                    <div *ngFor="let i of nation">
+                        <img src="{{i.dubai}}" alt="loading" class="img2"
+                            style="max-width: 100%;">
+                    </div>
+                </div>
+                <div class="card-contend">
+                    <h4>Dubai</h4>
+                    <p>United Arab Emirates
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <div *ngFor="let i of natio">
+                    <img src="{{i.mumbai}}" alt="loading" width="320" class="img2"
+                        style="max-width: 100%;">
+                    </div>
+                </div>
+                <div class="card-contend">
+                    <h4>Mumbai</h4>
+                    <p>India</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <div *ngFor="let i of nati">
+                    <img src="{{i.singapore}}" alt="loading" width="320" class="img2"
+                        style="max-width: 100%;">
+                    </div>
+                </div>
+                <div class="card-contend">
+                    <h4>Singapore</h4>
+                    <p>singapore</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <div *ngFor="let i of nat">
+                    <img src="{{i.bangkok}}" alt="loading" width="320" class="img2"
+                        style="max-width: 100%;">
+                    </div>
+                </div>
+                <div class="card-contend">
+                    <h4>Bangkok</h4>
+                    <p>Thailand </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <div *ngFor="let i of national">
+                    <img src="{{i.delhi}}" alt="loading" width="320" class="img2"
+                        style="max-width: 100%;">
+                    </div>
+                </div>
+                <div class="card-contend">
+                    <h4>Delhi</h4>
+                    <p>India</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <div *ngFor="let i of nationals">
+                    <img src="{{i.london}}" alt="loading" width="320" class="img2"
+                        style="max-width: 100%;">
+                    </div>
+                </div>
+                <div class="card-contend">
+                    <h4>London</h4>
+                    <p>United Kingdom                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <div *ngFor="let i of nationalsflag">
+                    <img src="{{i.paris}}" alt="loading" width="320" class="img2"
+                        style="max-width: 100%;">
+                    </div>
+                </div>
+                <div class="card-contend">
+                    <h4>Paris</h4>
+                    <p>France</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <div *ngFor="let i of nationalsfla">
+                    <img src="{{i.usa}}" alt="loading" width="320" class="img2"
+                        style="max-width: 100%;">
+                    </div>
+                </div>
+                <div class="card-contend">
+                    <h4>New York</h4>
+                    <p>United States</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img">
+                    <div *ngFor="let i of nationalsflags">
+                    <img src="{{i.amsterdam}}" alt="loading" width="320" class="img2"
+                        style="max-width: 100%;">
+                    </div>
+                </div>
+                <div class="card-contend">
+                    <h4>Amsterdam</h4>
+                    <p>Netherlands</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- <---footer start --->
+<footer class="firstfooter">
+    <div class="header">
+        <section class="sub-footer">
+            <div class="grid-container-4">
+                <div>
+                    <ul class="sub-footer-menu">
+                        <h5 class="sub-footer-title">Explore</h5>
+                        <li>
+                            <a href="#">Hotels directory</a>
+                        </li>
+                        <li>
+                            <a href="#">Domestic flights</a>
+                        </li>
+                        <li>
+                            <a href="#">Flights</a>
+                        </li>
+                        <li>
+                            <a href="#">Hotels</a>
+                        </li>
+                        <li>
+                            <a href="#">Car hire</a>
+                        </li>
+                        <li>
+                            <a href="#">App</a>
+                        </li>
+                        <li>
+                            <a href="#">Sitemap</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div>
+                    <ul class="sub-footer-menu">
+                        <h5 class="sub-footer-title">Partners</h5>
+                        <li>
+                            <a href="#">Work with us </a>
+                        </li>
+                        <li>
+                            <a href="#">Advertise With us </a>
+                        </li>
+                        <li>
+                            <a href="#">Travel Insight</a>
+                        </li>
+                        <li>
+                            <a href="#">Affiliates</a>
+                        </li>
+                        <li>
+                            <a href="#">Travel APIs</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <ul class="sub-footer-menu">
+                        <h5 class="sub-footer-title">Company</h5>
+                        <li>
+                            <a href="#">About us</a>
+                        </li>
+                        <li>
+                            <a href="#">Why Skyscanner?</a>
+                        </li>
+                        <li>
+                            <a href="#">Media</a>
+                        </li>
+                        <li>
+                            <a href="#">Our pepole </a>
+                        </li>
+                        <li>
+                            <a href="#">Accessibility</a>
+                        </li>
+                        <li>
+                            <a href="#">Sustainability</a>
+                        </li>
+                        <li>
+                            <a href="#">Brand story</a>
+                        </li>
+                        <li>
+                            <a href="#">Company Details</a>
+                        </li>
+                        <li>
+                            <a href="#">Jobs</a>
+                        </li>
+                        <li>
+                            <a href="#">Travel features & news</a>
+                        </li>
+                        <li>
+                            <a href="#">Cookie policy </a>
+                        </li>
+                        <li>
+                            <a href="#">privacy policy</a>
+                        </li>
+                        <li>
+                            <a href="#">Terms of service</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="sub-footer-menu">
+                        <h5 class="sub-footer-title">Help</h5>
+                        <li>
+                            <a href="#">Help</a>
+                        </li>
+                        <li>
+                            <a href="#">Privacy settings</a>
+                        </li>
+                        <li>
+                            <a href="#">Security</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- MAIN-FOOTER END  -->
+    </div>
+</footer>
+
+<footer>
+    <div class="header">
+        <section class="sub-footer">
+            <div class="grid-container-4">
+                <div>
+
+                    <ul class="sub-footer-menu inter">
+                        <h4>International Sites</h4>
+                        <li>
+                            <a href="#">Hotels</a>
+                        </li>
+                        <li>
+                            <a href="#">Hotels</a>
+                        </li>
+                        <li>
+                            <a href="#">Hotels</a>
+                        </li>
+                        <li>
+                            <a href="#">Hotels Deals in Popular Cities </a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div>
+                    <ul class="sub-footer-menu inter">
+                        <h4></h4>
+                        <li>
+                            <a href="#">Hotels </a>
+                        </li>
+                        <li>
+                            <a href="#">Hotels</a>
+                        </li>
+                        <li>
+                            <a href="#">Hotels</a>
+                        </li>
+                        <li>
+                            <a href="#">호텔</a>
+                        </li>
+                        <li>
+                            <a href="#">Khach san</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <ul class="sub-footer-menu inter">
+                        <h4></h4>
+                        <li>
+                            <a href="#">酒店</a>
+                        </li>
+                        <li>
+                            <a href="#">ホテル</a>
+                        </li>
+                        <li>
+                            <a href="#">Hotels</a>
+                        </li>
+                        <li>
+                            <a href="#">旅館 </a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div>
+                    <ul class="sub-footer-menu inter">
+                        <h4></h4>
+                        <li>
+                            <a href="#">旅館</a>
+                        </li>
+                        <li>
+                            <a href="#">Hotels</a>
+                        </li>
+                        <li>
+                            <a href="#">Отели</a>
+                        </li>
+                        <li>
+                            <a href="#">โรงแรม</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+
+    <!-- MAIN-FOOTER END  -->
+
+</footer>
+
+
+<section>
+    <div class="header">
+        <div class="f-1 text-r f-12px">
+            <span class="copyright-line">© Skyscanner Ltd 2002-2022</span>
+        </div>
+    </div>
+</section>
